@@ -100,4 +100,9 @@ public class Pelicula {
 
     }
 
+    public void setDuracion(int duracion) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setDuracion'");
+    }
+
 }
