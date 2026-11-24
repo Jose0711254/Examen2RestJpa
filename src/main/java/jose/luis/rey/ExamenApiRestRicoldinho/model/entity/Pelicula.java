@@ -2,6 +2,7 @@ package jose.luis.rey.ExamenApiRestRicoldinho.model.entity;
 
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -31,7 +32,7 @@ public class Pelicula {
     @Column(nullable = false)
     private int minutos;
 
-    @OneToMany(mappedBy = "pelicula")
+    @OneToMany(mappedBy = "pelicula", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Reparto> reparto;
 
     public Pelicula() {

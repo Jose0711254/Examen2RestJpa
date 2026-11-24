@@ -19,30 +19,35 @@ public class PeliculaServiceImpl implements IPeliculaService {
     private IPeliculaRepository peliculaRepository;
 
     @Override
+    @Transactional
     public PeliculaDetalleDTO crear(PeliculaRequestDTO dto) {
-        // TODO Auto-generated method stub
+        // TODO Auto-generated method stub */
         throw new UnsupportedOperationException("Unimplemented method 'crear'");
     }
 
     @Override
+    @Transactional(readOnly = true)
     public List<PeliculaListadoDTO> listarTodas() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'listarTodas'");
     }
 
     @Override
+    @Transactional
     public PeliculaDetalleDTO obtenerPorId(Long id) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'obtenerPorId'");
     }
 
     @Override
+    @Transactional
     public PeliculaDetalleDTO actualizar(Long id, PeliculaRequestDTO dto) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'actualizar'");
     }
 
     @Override
+    @Transactional
     public void eliminar(Long id) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'eliminar'");

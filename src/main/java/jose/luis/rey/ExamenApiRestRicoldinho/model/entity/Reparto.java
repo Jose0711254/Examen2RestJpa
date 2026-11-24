@@ -1,6 +1,5 @@
 package jose.luis.rey.ExamenApiRestRicoldinho.model.entity;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -32,11 +31,11 @@ public class Reparto {
     @Column(name = "actor_id", nullable = false)
     private Long actorId;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "pelicula_id", nullable = false)
     private Pelicula pelicula;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "actor_id", nullable = false)
     private Actor actor;
 

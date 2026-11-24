@@ -66,4 +66,5 @@ public class PeliculaController {
         peliculaService.eliminar(id);
         return ResponseEntity.noContent().build();
     }
+
 }
