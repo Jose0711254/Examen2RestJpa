@@ -1,4 +1,4 @@
-package jose.luis.rey.ExamenApiRestRicoldinho.repository;
+package jose.luis.rey.ExamenApiRestRicoldinho.model.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,4 +1,4 @@
-package jose.luis.rey.ExamenApiRestRicoldinho.dto;
+package jose.luis.rey.ExamenApiRestRicoldinho.model.dto;
 
 public record RepartoDTO(Long actorId, String actor, String personaje, double salario) {
 
